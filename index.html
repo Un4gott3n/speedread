@@ -9,20 +9,26 @@
 <body>
   <h1>Speed Reader</h1>
 
+  <div id="reader"></div>
+
+  <br>
+  <br>
+
   <textarea id="inputText" rows="8" cols="60">
     Paste text here...
   </textarea>
 
-  <br><br>
+  <br>
+  <br>
 
   <label>Words Per Minute</label>
   <input type="number" id="wpm" value="250">
 
-  <button onclick="startReading()">Start</button>
-
   <br>
-
-  <div id="reader"></div>
+  
+  <button onclick="startReading()">Start</button>
+  <button onclick="pauseReading()">Pause</button>
+  <button onclick="stopReading()">Stop</button>
 
   <script src="script.js"></script>
   
