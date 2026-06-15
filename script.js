@@ -1,4 +1,4 @@
-let timeer;
+let timer;
 
 function highlightMiddle(word) {
   if(word.length === 0) return "";
@@ -7,7 +7,7 @@ function highlightMiddle(word) {
 
   return (
     word.slice(0, middle) +
-    '<span class="highlight">${word[middle]}</span> +
+    '<span class="highlight">${word[middle]}</span>' +
     word.slice(middle + 1)
   );
 
