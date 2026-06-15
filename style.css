@@ -1,0 +1,16 @@
+body {
+  font-family: Ariel, sans-serif;
+  text-align: centre;
+  margin-top: 40px;
+}
+
+#reader {
+  font-size: 64px;
+  margin-top: 50px;
+  height: 100px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: red;
+}
