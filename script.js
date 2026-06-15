@@ -1,4 +1,6 @@
-let timer;
+let timer = null;
+let isRunning = false;
+let index = 0;
 
 function highlightMiddle(word) 
 {
@@ -13,28 +15,39 @@ function highlightMiddle(word)
   );
 }
 
-  function startReading() 
-  {
-    clearInterval(timer);
-
-    const text = document.getElementById("inputText").value;
-    const words = text.split(/\s+/);
-
-    const wpm = Number(document.getElementById("wpm").value);
-
-    let index = 0;
-
-    timer = setInterval(() => {
-      if(index >= words.length)
-      {
-        clearInterval(timer);
-        return;
-      }
-      document.getElementById("reader").innerHTML =
-        highlightMiddle(words[index]);
-
-      index++;
-
-      }, 60000 / wpm);
-   }
+function startReading() 
+{
+  if(isRunning) return;
   
+  isRunning = true;
+
+  const text = document.getElementById("inputText").value;
+  const words = text.split(/\s+/);
+  const wpm = Number(document.getElementById("wpm").value);
+
+  timer = setInterval(() => {
+    if(index >= words.length)
+    {
+      stopReading();
+      return;
+    }
+    document.getElementById("reader").innerHTML =
+      highlightMiddle(words[index]);
+
+    index++;
+
+    }, 60000 / wpm);
+}
+
+function pauseReading() 
+{
+    clearInterval(timer);
+    isRunning = false;
+}
+
+function stopReading() 
+{
+    clearInterval(timer);
+    isRunning = false;
+    index = 0;
+}
