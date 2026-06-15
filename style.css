@@ -9,10 +9,10 @@ body {
 }
 
 #reader {
-  font-size: 64px;
-  margin-top: 50px;
-  height: 100px;
-  font-weight: bold;
+    width: 400px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 .highlight {
