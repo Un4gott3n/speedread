@@ -11,6 +11,7 @@ function highlightMiddle(word)
     '<span class="highlight">${word[middle]}</span>' +
     word.slice(middle + 1)
   );
+}
 
   function startReading() 
   {
@@ -34,7 +35,6 @@ function highlightMiddle(word)
 
       index++;
 
-    }, 60000 / wpm);
-  }
-}
+      }, 60000 / wpm);
+   }
   
