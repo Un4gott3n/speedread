@@ -17,9 +17,7 @@
   <br>
 
   <div id="input-section">
-    <textarea id="inputText" rows="8" cols="60">
-      Paste text here...
-    </textarea>
+    <textarea id="inputText" placeholder="Paste text here..."></textarea>
   </div>
 
   <br>
@@ -32,9 +30,11 @@
   <br>
 
   <div id="controls-section">
-    <button onclick="startReading()">Start</button>
-    <button onclick="pauseReading()">Pause</button>
-    <button onclick="stopReading()">Stop</button>
+    <div id="controls">
+      <button onclick="startReading()">Start</button>
+      <button onclick="pauseReading()">Pause</button>
+      <button onclick="stopReading()">Stop</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
