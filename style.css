@@ -21,6 +21,11 @@ body {
 
 #inputText {
   color: #aaa;
+  font-family: Ariel, sans-serif;
+  text-align: centre;
+  margin-top: 40px;
+  margin: 0;
+  height: 100vh;
 }
 
 #controls {
