@@ -9,14 +9,18 @@
 <body>
   <h1>Speed Reader</h1>
 
-  <div id="reader"></div>
-
+  <div id="reader-section">
+    <div id="reader"></div>
+  </div>
+  
   <br>
   <br>
 
-  <textarea id="inputText" rows="8" cols="60">
-    Paste text here...
-  </textarea>
+  <div id="input-section">
+    <textarea id="inputText" rows="8" cols="60">
+      Paste text here...
+    </textarea>
+  </div>
 
   <br>
   <br>
@@ -25,10 +29,13 @@
   <input type="number" id="wpm" value="250">
 
   <br>
-  
-  <button onclick="startReading()">Start</button>
-  <button onclick="pauseReading()">Pause</button>
-  <button onclick="stopReading()">Stop</button>
+  <br>
+
+  <div id="controls-section">
+    <button onclick="startReading()">Start</button>
+    <button onclick="pauseReading()">Pause</button>
+    <button onclick="stopReading()">Stop</button>
+  </div>
 
   <script src="script.js"></script>
   
