@@ -1,18 +1,31 @@
 body {
-  margin: 0;
-  height: 100vh;
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+#reader-section,
+#input-section,
+#controls-section {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
+  margin: 10px 0;
 }
 
 #reader {
-    width: 400px;
-    text-align: center;
-    font-size: 64px;
-    font-weight: bold;
+  width: 400px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+#inputText {
+  color: #aaa;
+}
+
+#controls {
+  display: flex;
+  gap: 10px;
 }
 
 .highlight {
