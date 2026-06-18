@@ -9,7 +9,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 #reader {
@@ -21,6 +21,9 @@ body {
 
 #inputText {
   color: #aaa;
+  width: 600px;
+  height: 200px;
+  resize: vertical;
 }
 
 #controls {
